@@ -1,0 +1,114 @@
+.hero
+    height: 1500px
+    background: url('../img/icons/bg.png') no-repeat bottom
+    background-size: cover
+    &__head
+        height: 350px
+        background: #d2ecfe
+    &__lo
+        width: 100%
+        height: 850px
+    &__content
+        height: 1000px
+        background: url('../img/icons/deg.png') no-repeat top right
+        margin-bottom: 20px
+    &__logo
+        position: absolute
+    &__header
+        display: flex
+    &__wrapper
+        padding-top: 20px
+        position: relative
+    &__title
+        text-transform: uppercase
+        margin: 0
+        font-family: Gotham-Pro
+        font-size: 36px
+        text-align: center
+        font-weight: bold
+        color: #fff
+    &__trainers
+        z-index: 0
+        position: absolute
+        display: flex
+        margin: 50px 0px 0px -100px
+    &__img
+        margin: 0 50px
+    &__in
+        z-index: 2
+        align-items: center
+        display: flex
+        flex-direction: column
+    &__disc
+        margin: 40px 0
+        width: 300px
+    &__price
+        display: flex
+        margin-bottom: 30px
+        &-prev
+            margin-right: 5px
+            line-height: 35px
+            color: #fff
+            text-decoration: line-through
+            text-decoration-color: #ff0000
+        &-now
+            @include main-color
+    &__br
+        width: 170px
+        height: 170px
+        border-radius: 50%
+        border: 2px solid #ffea00
+    &__btn
+        position: absolute
+        margin: 5px
+        padding: 0
+        font-family: GothamPro-medium
+        font-size: 18px
+        line-height: 22px
+        font-weight: bold
+        text-transform: uppercase
+        color: #000851
+        border: none
+        background: #ffea00
+        width: 160px
+        height: 160px
+        border-radius: 50%
+        transition: all 0.5s
+        &:active
+            background: rgb(215,1,77)
+@media screen and ( max-width: 768px )
+    .hero
+        height: 2500px
+    .hero__lo
+        background: #9e39c0
+        height: 950px
+    .hero__head
+        background: #9e39c0
+    .hero__content
+        background: url('../img/icons/deg.png') no-repeat 40% 0%
+        height: 900px
+    .hero__wrapper
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .hero__logo
+        position: relative
+    .hero__trainers
+        z-index: 0
+        position: relative
+        display: flex
+        margin: 0
+    .hero__title
+        margin: 30px 0
+    .hero__img
+        max-width: 200px
+        max-height: 250px
+        margin: 0
+@media screen and ( min-width: 768px ) and ( max-width: 1700px )
+    .hero
+        &__img
+            width: 50%
+            margin: 0
+
+            

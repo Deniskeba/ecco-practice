@@ -1,0 +1,133 @@
+.descr
+    &__title
+        text-align: center
+        font-size: 40px
+        font-weight: 200
+        text-transform: uppercase
+        font-family: GothamPro-Medium
+        color: #d7014d
+    &__descr
+        line-height: 27px
+        margin: 30px 0
+        font-family: Gotham-Pro
+        font-size: 18px
+        color: #000851
+        text-align: center
+    &__shoe
+        max-width: 100%
+        position: relative
+        display: flex
+        justify-content: center
+    &__hover
+        position: absolute
+        height: 100%
+        display: flex
+        flex-direction: row
+    &__bo
+        position: relative
+        &-1
+            margin: 10px -35px 0 0
+        &-2
+        &-3
+            margin: 60px 0 0 20px
+    &__cross
+        position: absolute
+        line-height: 44px
+        text-align: center
+        border-radius: 50%
+        color: #fff
+        font-family: Gotham-Pro
+        font-weight: bold
+        width: 44px
+        height: 44px
+        background: #d7014d
+        cursor: pointer
+        &-1
+            margin: -20px 0 0 -20px
+        &-2
+            right: 0
+            margin: -20px -20px 0 0
+        &-3
+            right: 0
+            margin: -20px -20px 0 0
+
+    &__block
+        width: 285px
+        height: 250px
+        background: #000851
+        border-radius: 20px
+        padding: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        opacity: 0
+        transition: 0.3s all
+        h3
+            font-size: 24px
+            @include main-color
+            font-weight: 300
+            font-family: Gotham-Pro
+            text-align: center
+        span
+            margin-top: 20px
+            font-family: Gotham-Pro
+            color: #fff
+            font-size: 18px
+            text-align: center
+            line-height: 25px
+        &-1
+            margin: 0 0 0 0
+        &-2
+        &-3
+    &__icon
+        display: flex
+        justify-content: center
+    &__info
+        position: absolute
+        color: #fff
+        font-family: GothamPro-Medium
+        text-align: center
+        line-height: 44px
+        width: 44px
+        height: 44px
+        background: #d7014d
+        border-radius: 50%
+        &-1
+            left: 110px
+            top: 240px
+        &-2
+            margin: 0 -190px 0 0
+        &-3 
+            bottom: 100px
+            right: 100px
+        &:hover .descr__block
+            display: block
+@media screen and ( max-width: 768px )
+    .descr
+        height: 1
+    .descr__hover
+        position: relative
+        display: flex
+        flex-direction: column
+    .descr__block
+        opacity: 1
+    .descr__cross
+        display: none
+    .descr__shoe
+        display: flex
+        flex-direction: column
+        img
+            max-width: 100%
+    .descr
+        padding: 30px 10px
+    .descr__bo
+        margin-top: 10px
+        display: flex
+        justify-content: center
+    .descr__bo-3
+        margin: 0
+        margin-top: 10px
+    .descr__bo-1
+        margin: 0
+        margin-top: 10px
+    
